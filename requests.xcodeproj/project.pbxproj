@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		887130941849DE8700719AFC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 887130931849DE8700719AFC /* main.cpp */; };
 		887130961849DE8700719AFC /* requests.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 887130951849DE8700719AFC /* requests.1 */; };
+		8871309D1849DE9800719AFC /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8871309C1849DE9800719AFC /* libcurl.dylib */; };
+		887130A01849DEAE00719AFC /* Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8871309E1849DEAD00719AFC /* Request.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,9 @@
 		887130901849DE8700719AFC /* requests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = requests; sourceTree = BUILT_PRODUCTS_DIR; };
 		887130931849DE8700719AFC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		887130951849DE8700719AFC /* requests.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = requests.1; sourceTree = "<group>"; };
+		8871309C1849DE9800719AFC /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+		8871309E1849DEAD00719AFC /* Request.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Request.cpp; sourceTree = "<group>"; };
+		8871309F1849DEAE00719AFC /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8871309D1849DE9800719AFC /* libcurl.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 		887130871849DE8700719AFC = {
 			isa = PBXGroup;
 			children = (
+				8871309C1849DE9800719AFC /* libcurl.dylib */,
 				887130921849DE8700719AFC /* requests */,
 				887130911849DE8700719AFC /* Products */,
 			);
@@ -61,6 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				887130931849DE8700719AFC /* main.cpp */,
+				8871309E1849DEAD00719AFC /* Request.cpp */,
+				8871309F1849DEAE00719AFC /* Request.h */,
 				887130951849DE8700719AFC /* requests.1 */,
 			);
 			path = requests;
@@ -118,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				887130941849DE8700719AFC /* main.cpp in Sources */,
+				887130A01849DEAE00719AFC /* Request.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
