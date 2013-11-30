@@ -32,5 +32,7 @@ void Requests::console_log(std::ostream& stream){
     stream << content_;
 }
 
-
+void Requests::str_log(std::string& strem){
+    strem = content_;
+}
 

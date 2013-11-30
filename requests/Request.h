@@ -23,7 +23,7 @@ public:
     Requests(const std::string& url);
     void send();
     void console_log(std::ostream& stream);
-    void console_log(std::ostream& stream);
+    void str_log(std::string& strem);
 private:
     typedef void (*cleanup)(CURL*);
     typedef std::unique_ptr<CURL, cleanup> CurlHandle;
