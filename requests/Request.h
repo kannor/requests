@@ -24,6 +24,7 @@ public:
     void send();
     void console_log(std::ostream& stream);
     void str_log(std::string& strem);
+    std::string response();
 private:
     typedef void (*cleanup)(CURL*);
     typedef std::unique_ptr<CURL, cleanup> CurlHandle;

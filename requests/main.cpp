@@ -20,7 +20,9 @@ int main()
     
     request.send();
     //request.console_log(std::cout);
-    request.str_log(content);
+    //request.str_log(content);
+    
+    content = request.response();
     
     std::cout << content;
 }

@@ -36,3 +36,7 @@ void Requests::str_log(std::string& strem){
     strem = content_;
 }
 
+std::string Requests::response(){
+    return content_;
+}
+
